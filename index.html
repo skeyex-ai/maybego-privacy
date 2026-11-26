@@ -51,7 +51,7 @@ data: <a href="mailto:skeyex.ai@gmail.com">skeyex.ai@gmail.com</a>.</p>
   <tr><td>Flyer photos and screenshots you capture or share into the app</td><td>To read the event details, and to keep the flyer with its maybe so both parents can see it</td></tr>
   <tr><td>Your settings (for example the reminder time and the first day of the week) and your time zone</td><td>So the app and reminders work the way you set them</td></tr>
   <tr><td>Invite codes your family creates</td><td>So your partner can join your family</td></tr>
-  <tr><td>A push notification token for your phone, if you allow notifications</td><td>To send reminders about your own maybes</td></tr>
+  <tr><td>A push notification token for your phone, if you allow notifications</td><td>To send reminders about your family's maybes, and a note when your partner adds one</td></tr>
   <tr><td>A record that you agreed to the AI notice</td><td>So we only send photos after you agreed</td></tr>
 </table>
 <p>We do not collect your location, contacts, calendar contents, browsing activity or advertising identifiers.
@@ -67,8 +67,9 @@ MaybeGo only <em>adds</em> an event to your calendar when you ask it to; it neve
     Before your first capture the app asks for your permission, names Anthropic, and sends nothing until you agree.
     Without agreeing you can still type maybes in.</li>
   <li><strong>Apple</strong> handles Sign in with Apple, and delivers notifications to your iPhone.</li>
-  <li><strong>Expo</strong> (a push service) passes reminders on to Apple. A reminder holds only your phone's push
-    token and the reminder's words (the title of one of your family's maybes).</li>
+  <li><strong>Expo</strong> (a push service) passes notifications on to Apple. A notification holds only your phone's
+    push token, its words (titles of your family's maybes and, when your partner adds a maybe, your partner's name
+    in MaybeGo), and a random code that tells the app which maybe to open.</li>
 </ul>
 <p>These services handle data only to provide their part of MaybeGo, under their own terms and privacy commitments,
 which give the same or equal protection as this policy. We do not sell, rent or share your data with anyone else,
